@@ -1,0 +1,11 @@
+/* Element Styling */
+
+h1{
+    font-size: 50px;
+    align-content: flex-start;
+    background-color: chartreuse;
+}
+div{
+
+    color: blueviolet;
+}
