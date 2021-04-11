@@ -1,3 +1,5 @@
+
+
 /* Element Styling */
 
 h1 {
@@ -31,10 +33,19 @@ body{
     background-color: rgba(2, 29, 65, 0.952);
 }
 
+footer{
+    text-align: center;
+    font-size: 20px;
+    color: cornflowerblue;
+
+}
+
 
 /* Class Styling  */
 
-
+.bottom{
+    padding-bottom: 500px;
+}
 
 .boxes{
     float: left;
@@ -90,14 +101,13 @@ body{
 }
 
 .work {
-    padding-bottom: 500px;
     display:flex;
-    justify-content: space-evenly;
+
 }
 
 .work2 { padding-bottom: 500px;
     display:flex;
-    justify-content: space-evenly;
+    margin-left: 254px;
 
 
 }
@@ -110,6 +120,17 @@ body{
     padding: 10px;
 }
 
-#box1, #box2 {
+#box1, #box2, #box3, #box4 {
     border: solid 5px black;
+}
+
+
+/* Repsonsive-ness */
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(1, 39, 51);
+    }
+  }
+    
 }
