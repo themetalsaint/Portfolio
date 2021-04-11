@@ -43,6 +43,7 @@ body{
     display: flex;
     margin: 10px;
     
+    
 }
 
 .row::after {
@@ -85,11 +86,30 @@ body{
     border-right: solid 5px;
     margin-right: 40px;
     color: lightblue;
+    flex-wrap: wrap;
 }
 
 .work {
     padding-bottom: 500px;
+    display:flex;
+    justify-content: space-evenly;
 }
 
+.work2 { padding-bottom: 500px;
+    display:flex;
+    justify-content: space-evenly;
 
+
+}
+
+/* ID Styling */
+
+#info {
+    font-size: 25px;
+    color:lightblue;
+    padding: 10px;
+}
+
+#box1, #box2 {
+    border: solid 5px black;
 }
