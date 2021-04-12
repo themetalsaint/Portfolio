@@ -21,6 +21,7 @@ header {
     color:rgba(0, 2, 5, 0.952);
     padding-top: 15px;
     margin-right: 20px;
+    background-color:rgba(0, 128, 128, 0.452);
 }
 
 nav {
@@ -74,7 +75,6 @@ footer{
     display: flex;
     margin: 10px;
     
-    
 }
 .box-row {
     display: flex;
@@ -86,8 +86,8 @@ footer{
     justify-content: space-between;
 }
 .box-head {
-    background: rgb(36, 82, 48);
-    opacity: 0.75;
+    background: rgb(220, 243, 250);
+    opacity: 0.65;
     margin-bottom: 10px;
     padding: 10px;
     margin-top: 50px;
@@ -144,20 +144,17 @@ footer{
 	flex:1;
 	margin-bottom:10px;
 }
-.box:hover {
-    transform:scale(1.2)
-}
 .box1:hover {
-    transform:scale(1.5)
+    transform:scale(1.25)
 }
 .box2:hover {
-    transform:scale(1.5)
+    transform:scale(1.25)
 }
 .box3:hover {
-    transform:scale(1.5)
+    transform:scale(1.25)
 }
 .box4:hover {
-    transform:scale(1.5)
+    transform:scale(1.25)
 }
 
 
@@ -201,6 +198,13 @@ footer{
     text-align: center;
     float: left;
     
+}
+
+img {
+    border: solid 10px transparent;
+}
+img:hover {
+    border-color: rgb(0, 128, 90);
 }
 
 .title {
@@ -247,7 +251,6 @@ footer{
 
 
     
-}
 
 
 /* Repsonsive-ness */
@@ -255,18 +258,14 @@ footer{
 
 @media screen and (max-width: 900px) {
     body {
-      background-color: rgb(227, 234, 236);  
+      background-color: rgb(1, 42, 53);  
     }
-  
-    
+    nav a{
+        color: rgb(1, 10, 10);
+    }
+    #contact{
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
+   
+}
