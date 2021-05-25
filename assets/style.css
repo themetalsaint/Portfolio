@@ -138,15 +138,16 @@ footer span{
     margin-bottom: 10px;
     padding: 10px;
     margin-top: 50px;
+    position:relative;
     
 }
-.box-row .box-row2{
-	width:30%;
-	flex:unset;
-    margin-left: 256px;
-    display: flex;
-    justify-content: space-between;
+
+.box-row{
+    margin-top: -210px;
 }
+
+
+
  
 
 .box1 {
@@ -171,25 +172,19 @@ footer span{
     border: 5px solid black;
 	background: url(./images/Art/passwordpic.jpg) center/cover no-repeat;
 	margin-bottom:10px;
-    margin-right: 10px;
     margin-left: 400px;
 }
 
 
-.box1:hover {
-    transform:scale(1.25)
-}
-.box2:hover {
-    transform:scale(1.25)
-}
-.box3:hover {
+.box1:hover, .box2:hover, .box3:hover{
     transform:scale(1.25)
 }
 
 
 
 
-.contact-heading h4 {
+
+/* .contact-heading h4 {
     margin: 0px;
     font-size: 36px;
     line-height: 40px;
@@ -201,7 +196,7 @@ footer span{
     border-right: 5px solid;
     margin-right: 20px;
     width: 190px; 
-}
+} */
 .row::after {
     content: "";
     clear: both;
@@ -225,6 +220,7 @@ footer span{
     color: lightblue;
     writing-mode: tb-rl;
     transform: rotate(-180deg);
+    
 }
 
 .work {
@@ -271,7 +267,7 @@ footer span{
     #contact{
         width: 100%;
     }
-    p{
+    p, h1{
         color:cornsilk
     }
 
