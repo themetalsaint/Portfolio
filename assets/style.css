@@ -45,7 +45,10 @@ nav a:hover{
 
 .container{
     padding:0 5vw;
-    margin: 5vh 0;
+    /* margin: 5vh 0; */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: minmax(100px, auto);
 }
 
 
@@ -69,20 +72,41 @@ img {
 }
 
 .about {
-    display:flex;
+    grid-column: 2/8;
     align-content: center;
-    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    
 }
-.about article{
+
+.about img{
+    grid-column: 2/4;
+    grid-row: 1/2;
+
+}
+
+.about .title{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    max-width: 3vw;
+}
+
+.about p {
+    grid-column: 4/8;
+    grid-row: 1/2;
+    max-width: 30vw;
+}
+
+
+
+.about article {
     display:flex;
     align-items: center;
 }
 p {
     font-size: 20px;
     color: #3f3f3f;
-    width: 40vw;
 
-    
 }
 
 
@@ -114,8 +138,35 @@ footer span{
     margin-top: 3vh;
 }
 
-/* Class Styling  */
+#mywork{
+   grid-column: 2/8;
+   grid-row: 2/5;
+}
 
+#mywork .title{
+    grid-column: 3/4;
+    grid-row: 2/5;
+}
+
+.box-row{
+    grid-column: 4/8;
+    grid-row: 2/5;
+}
+
+.box-row #one{
+grid-column: 4/8;
+grid-row: 2/3;
+}
+
+.box-row #two{
+grid-column: 4/8;
+grid-row: 3/4;
+}
+
+.box-row #three{
+grid-column: 4/8;
+grid-row: 4/5;
+}
 
 
 .bottom{
@@ -135,16 +186,13 @@ footer span{
 .box-head {
     background: rgb(220, 243, 250);
     opacity: 0.8;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 10px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position:relative;
     
 }
 
-.box-row{
-    margin-top: -210px;
-}
 
 
 
@@ -156,7 +204,8 @@ footer span{
     border: 5px solid black;
 	background: url(./images/Art/headerImage.jpg) center/cover no-repeat;
 	margin-bottom:10px;
-    margin-left: 400px;   
+    /* margin-left: 10vw; */
+    max-width: 50vw;   
 }
 .box2 {
     align-items: flex-end;
@@ -164,7 +213,8 @@ footer span{
     border: 5px solid black;
 	background: url(./images/Art/officeheader.jpg) center/cover no-repeat;
 	margin-bottom:10px;
-    margin-left: 400px;
+    /* margin-left: 10vw; */
+    max-width: 50vw;
 }
 .box3 {
     align-items: flex-end;
@@ -172,7 +222,8 @@ footer span{
     border: 5px solid black;
 	background: url(./images/Art/passwordpic.jpg) center/cover no-repeat;
 	margin-bottom:10px;
-    margin-left: 400px;
+    /* margin-left: 10vw; */
+    max-width: 50vw;
 }
 
 
@@ -183,20 +234,6 @@ footer span{
 
 
 
-
-/* .contact-heading h4 {
-    margin: 0px;
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-    color:lightblue;
-}
-.contact-heading h4 {
-    padding-left: 100px;
-    border-right: 5px solid;
-    margin-right: 20px;
-    width: 190px; 
-} */
 .row::after {
     content: "";
     clear: both;
@@ -216,7 +253,7 @@ footer span{
     text-align: left;
     font-size: 50px;
     border-left: solid 5px;
-    margin: 0 3vw;
+    /* margin: 0 3vw; */
     color: lightblue;
     writing-mode: tb-rl;
     transform: rotate(-180deg);
@@ -228,12 +265,7 @@ footer span{
 
 }
 
-.work2 { padding-bottom: 500px;
-    display:flex;
-    margin-left: 254px;
 
-
-}
 
 /* ID Styling */
 
